@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:lavender;" bg>
+    <h2 style="color:rgb(110, 49, 49);">using forms in html</h2>
+
+    <form style="background-color: darkcyan; padding:70px; width:60%; display:flex;
+     justify-content: center; flex-direction:row; align-items: center;">
+        <label for="fname">  HOME</label>
+        <p> &nbsp;</p>
+        <br><br>
+        <label for="1name">services</label>
+        
+        <br><br>
+        <label for="title">Title</label>
+        
+        <input type="password" placeholder="Enter your passsword"><br><br>
+        <label for="Register"> click to register</label>
+        <br>
+        <input type="email" placeholder="Enter your Email"><br><br>
+        <input type="submit" value="Register Now" style="padding: 5px; background-color:
+         lightgray; font-weight: 700; border-radius: 20px;">
+    </form>
+
+    <h2>Forms with Radio Buttons</h2>
+    <!--
+     The <input type="radio"> defines a radio button
+     Radio buttons allows users to select one from a number of choices
+    -->
+    <p>Choose Your favourite programming language</p>
+    <form style="background-color: darkcyan; padding: 30px; width: 50%;">
+        <input type="radio" id="Javascript" name="language" value="Javascript">
+        <label for="Javascript"> Javascript</label><br>
+        <input type="radio" id="python" name="language" value="python">
+        <label for="Ruby">Ruby</label><br>
+        <input type="radio" id="PHP" name="language" value="PHP">
+        <label for="PHP">PHP</label>
+    </form> 
+    <h2>Forms with check boxes</h2>
+        <!--
+            The <input type="checkbox"> defines a checkbox
+            Checkboxes allows users to select Zero or more options from a number of choices
+        -->
+           <Form style="background-color: bisque; padding: 30px; width: 50%;">
+                <input type="checkbox" id="veh1" name="vehicle" value="Bike">
+                <label for="veh1">I have a bike</label><br>
+                <input type="checkbox" id="veh2" name="vehicle" value="Car">
+                <label for="veh2" >I have a Car</label><br>
+                <input type ="checkbox" id="veh3" name="vehicle" value="Jet">
+                <label for="veh3">I have a Jet</label><br>
+            </Form> 
+            
+            <h2>Forms with select options (Dropdowns)</h2>
+            <!--
+                We use the <select> tag to create a dropdown input in html. 
+            -->
+            <label for="country">Choose a country:</label>
+            <select name="country" id="country">
+                <option value=""></option>
+                <optipon value="usa">USA</optipon>
+                <option value="germany">Germany</option>
+                <option value="nigeria">Nigeria </option>
+            </select><br>
+</body>
+</html>

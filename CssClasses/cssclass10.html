@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity and dropdown</title>
+    <header>
+    <style>
+        header{
+            display: flex;
+            padding: 15px;
+            background-color: lavender;
+            justify-content: space-between;
+        }
+        nav a{
+            margin: 5px;
+        }
+        nav{
+            margin top: 20px;
+        }
+        #dropdown{
+            display: inline-block;
+            padding: 10px;
+        }
+        .dropdown btn{
+            padding: 8px;
+            cursor: pointer;
+            color: white;
+            background-color: brown;
+            border-radius: 15px;
+        }
+        .dropdown menu p{
+            border: 2px solid brown;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .dropdown menu{
+            display: none;
+
+        }
+        #dropdown:hover .dropdown menu{
+            display: block;
+        }
+
+        
+    </style>
+    </header>
+    <body>
+        <header>
+            <h1>Logo</h1>
+            <nav>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contac</a>
+            </nav>
+            <div id="dropdown">
+                <button class="drop-btn">Select an option</button>
+                <div class="drop-menu">
+                    <p>Option 1</p>
+                    <p>Option 2</p>
+                    <p>Option 3</p>
+                </div>
+            </div>
+        </header>
+    </body>
+    

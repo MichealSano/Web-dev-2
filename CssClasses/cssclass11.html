@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS class 11</title>
+    <style>
+        .static-box{
+            width: 300px;
+            height: 300px;
+            padding: 15px;
+            background-color: green;
+            border: 2px solid black;
+            position: static;
+        }
+        .relative-box{
+            width: 300px;
+            height: 300px;
+            padding: 15px;
+            background-color: yellow;
+            border: 2px solid black;
+            position: static;
+        }
+    </style>
+    </head>
+    <body>
+        <!-- Css positions
+         1 static-default-- the element is positioned according to the normal flow of the page .
+         so if we set left/right/top.buttom there would be no effect on the element.
+         2 relative--the element orginal position is according to the normal flow of thre the page
+         just like satic values, but now if we set left/right/top.buttom there would be no effect on the element.
+         3 absolute-- the element is completely removed from the document flow ,it is positioned WRT
+         its containing block it may overlap other element or br overlaped by them
+         4 fixed-- just like absolute except the containing block is always the view point.
+         5-- sticky-- the element stick to the top of it nearest positioned ancestors that has the scrolling mechanism-->
+         <div class="static-box">
+            <h2>position static</h2>
+            <p>This box has a static positoion</p>
+         </div>
+         <div class="relative-box">
+            <h2>position</h2>
+            <p>This box has a static position</p>
+         </div>
+    </body>

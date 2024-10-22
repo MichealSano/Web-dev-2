@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            /*background-color: violet;*/
+            background-image: url(./1932432.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header{
+        display:flex;
+        justify-content: space-between;
+        font-family: "Fraunces", serif;
+        }
+        #brand{
+            font-family: "Montserrat", system-ui;
+            font-family: "Fraunces", serif;
+            display:flex;
+        }
+        #brand h1::first-letter{
+            font-family: "Montserrat", system-ui;
+            color: green;
+            font-size: 60px
+        }
+        #learnBtn{
+            font-family: "Fraunces", serif;
+            background-color: blue;
+            color: navy;
+            font-weight: 800;
+            padding: 8px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        #learnBtn:hover{
+
+            color: blue;
+            background-color: slateblue;
+            font-family: "Fraunces", serif;
+        }
+        nav a:hover{
+            border-bottom: 3px solid blue;
+            font-family: "Fraunces", serif;
+            cursor: pointer;
+            display:inline;
+        }
+        nav a {
+            color: brown;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: "Fraunces", serif;
+            border-left: 2px solid gray;
+            padding: 8px;
+
+        }
+        nav a:first-child{
+            border-left: none;
+            font-family: "Fraunces", serif;
+        }
+        nav{
+            margin-top: 30px;
+            font-family: "Fraunces", serif;
+
+        }
+    </style>
+    <body>
+        <header>
+            <div id="brand">
+                <img src="./WIN_20241006_05_32_41_Pro.jpg" height="50px" width="50px" alt="Brand Logo" id="Logo">
+                <h1>ETHAN'S WORLD</h1>
+            </div>
+            <nav>
+                
+                    <a href="#Home">Home</a>
+                    <a href="#About">About</a>
+                    <a href="#Contact us">Contact us</a>
+                    <a href="#Blog">Blog</a>
+                
+              
+            </nav>
+            <div>
+                <button id="learnBtn">Login</button>
+                <button id="learnBtn">Sign in</button>
+            </div>
+            
+</body>
+</html>

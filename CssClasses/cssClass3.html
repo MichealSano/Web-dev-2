@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3</title>
+    <style>
+        #box{
+            background-color: grey;
+            width: 300px;
+           /* height: 300px;*/
+            border: 10px solid blue;
+            /* padding: 50px; */
+            padding-top: 50px;
+            padding-left: 50px;
+            /* margin: 30px; */
+            margin-top: 100px;
+
+        }
+        #container{
+            background-color: brown;
+            margin: 30px 10px 20px;
+            border: 5px dashed orangered;
+            padding: 25px 10px;
+        }
+        #new{
+            cursor: default;
+            height: 50px;
+            width: 310px;
+            padding-left: 70px;
+            font-size: 20px;
+            background-color: gray;
+            border-color: rgba(0, 0, 0, 0);
+            border-right-color: white;
+            border-right-width: 2px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        ::placeholder{
+            color: black;
+        }
+
+        #subscribe{
+            cursor: pointer;
+            height: 56px;
+            width: 160px;
+            margin-left: -4px;
+            border-color: rgba(0, 0, 0, 0);
+            border-left-color: white;
+            border-left-width: 2px;
+            background-color: blue;
+            font-weight: 900;
+            font-size: 16px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            /* border-radius:0px 20px 20px 0px; *//*A Shorthand for all border-radius sidees*/
+        }
+
+            
+        
+    </style>
+    </head>
+    <body>
+        <h2>Box Model In CSS</h2>
+        <!--Html Element can be considered as boxes.
+        The Css Box Model is essentailly a box that wraps around every HTML
+        Element. it consist of content ,padding,border and margin. -->
+        <div style="margin: 30px;background-color: bisque; padding-top: 100px;">
+        <div id="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita enim provident nobis 
+            error quae suscipit a ullam ut quia incidunt. Autem cumque nam blanditiis 
+            dolorum similique magni culpa, ratione eos?
+        </div>
+        <div id="container">
+            <img src="../468823.jpg" width="400px;" height="400px;" alt="">
+        </div>
+        <div id="newletter">
+        <input type=" text" name="new" id="news" placeholder="Subscribe to my newletter">
+        <button id="subscribe">subscribe</button>
+        </div>
+        <!--Css Font 
+        we ca define font and customize the ir appearance by setting properities like the font-famiy,font-size, and
+        font-weight and font-style
+        
+        types of font families
+        monospace font:every latter has equal width.
+        serif font:have smallstoke at the edge of the letter.
+        san serif:clean font without any strokes.
+        fantansy font: decorative/playful font.
+        cursive font:are font that resemble human handwriting-->
+        <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita enim provident nobis 
+            error quae suscipit a ullam ut quia incidunt. Autem cumque nam blanditiis 
+            dolorum similique magni culpa, ratione eos?
+        
+        
+
+
+
+
+    </body>
+    </html>

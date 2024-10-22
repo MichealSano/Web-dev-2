@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-container {
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #075e54;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.chat-input button {
+    padding: 10px;
+    background-color: #075e54;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">WhatsApp Clone</div>
+        <div class="chat-messages">
+            <!-- Messages will go here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type a message">
+            <button>Send</button>
+        </div>
+    </div>
+    <script src="script.js">document.querySelector('button').addEventListener('click', () => {
+        const input = document.querySelector('input');
+        const message = input.value;
+        if (message.trim()) {
+            const messageElement = document.createElement('div');
+            messageElement.textContent = message;
+            document.querySelector('.chat-messages').appendChild(messageElement);
+            input.value = '';
+        }
+    });
+    <script>
+        </script>
+</body>
+</html>

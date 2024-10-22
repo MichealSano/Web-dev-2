@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Class  media queries</title>
+    <style>
+        h2{
+            color: blue;
+            background-color: aliceblue;
+            padding: 8px;
+        }
+        .box{background-color: black;
+            color: gray;
+            font-weight: 800;
+            font-size: 30px;
+            text-align: center;
+            padding: 20px;
+            width: 800px;
+            min-width: 200px;
+            height: 400px;
+        }
+        @media all and(orientation: portrait){
+            h2{
+                color: red;
+            }
+        }
+        /* media type 
+        media type come after the @media rule,if we don't apply a media type 
+        the @ media rule select all types of device by default.
+        all-for all media type
+        print- for all media types
+        screen- for computer screen, tablet and, smart-phones
+        speech- for screen reader that read the page out loud*/
+        @media screen and( max-width: 400px){
+            h2{
+                background-color: yellow;
+            }
+        }
+        @media screen and (min-width:400px){
+            h2{
+                background-color: purple;
+            }
+        }
+        /* min-width used for mobile first designs*/
+        /* commonly used width for the different screen sizes
+        for extra large screens >1200px
+        for large screen (desktop)-1200px
+        for mediume screen (tablet)-1025 to 1200px
+        for small screen(phone)-320px to 480px*/
+
+        /* min-width used for mobilefirst designs*/
+        /*
+        common breakponit fo the width of the device
+        320px-480px:mobile device
+    </style>
+</head>
+<body>
+    <h2>Css Media Queries</h2>
+    <!-- The @media rule introduce in Css 2 make it possible to define different 
+    style for different media types.-->
+    <div class=" box">
+        This is a box
+    </div>
+    <div class=""

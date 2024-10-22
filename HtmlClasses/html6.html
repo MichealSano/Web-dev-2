@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shooter Game</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script src="game.js">const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        let player = {
+            x: canvas.width / 2,
+            y: canvas.height - 30,
+            width: 50,
+            height: 50,
+            color: 'blue',
+            speed: 5
+        };
+        
+        function drawPlayer() {
+            ctx.fillStyle = player.color;
+            ctx.fillRect(player.x, player.y, player.width, player.height);
+        }
+        
+        function update() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawPlayer();
+            requestAnimationFrame(update);
+        }
+        
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowLeft' && player.x > 0) {
+                player.x -= player.speed;
+            } else if (event.key === 'ArrowRight' && player.x < canvas.width - player.width) {
+                player.x += player.speed;
+            }
+        });
+        
+        update();
+        </script>
+</body>
+</html>

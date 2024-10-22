@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 4</title>
+    <style>
+        /* we can select element base on specific relationship btw them */
+        #profile p button {
+          color: red
+          font-weight: 700;
+        }
+        /* we can select mutiple element by seperating selectors with a coma.*/
+        p, button,h1{
+            background-color: bisque;
+        }
+        /* pseudo classes is use to define a special state of an element .
+        e.g to style an element when a user mouses over it, to style an element whenit goes to focus*/
+        #learnBtn{
+            background-color: blue;
+            color: aliceblue;
+            font-weight: 800;
+            padding: 8px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        #learnBtn:hover{
+            color: blue;
+            background-color: aliceblue;
+        }
+        ul li{
+            display:inline
+        }
+        ul li:hover{
+            border-bottom: 3px solide blue;
+            cursor: pointer;
+            display:inline
+        }
+        /* we use the style attribute to change or remove the style on the list*/
+        #list{
+            list-style-type: none;
+        }
+        a:visited{
+            color: green;
+        }
+        a:active{
+            color: brown;
+        }
+        input:focus{
+            background-color: bisque;
+        }
+
+        /* A CSS pseudo element is used to style specificed part of thre element.
+        e,g selected part, first letter or line ,placeholder, etc*/
+        input ::placeholder{
+            color: brown;
+            font-weight: 700;
+            font-style: italic;
+        }
+        #head::first-letter{
+            font-size: 48px;
+            color: red;
+        }
+        #para::first-line{
+            background-color: grey;
+        }
+        #para::selection{
+            background-color: gold;
+            outline-color: aliceblue;
+        }
+    </style>
+    </head>
+    <body>
+    <h1>Company Name</h1>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact us</li>
+            <li>Blog</li>
+        </ul>
+    </nav>
+    <ul id="list">
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        </ul>
+    <div id="Profile">
+        <h2>Profile</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+            <button id="learnBtn">Learn More</button>
+        </p>
+        </div>
+        <p id="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita enim provident nobis 
+            error quae suscipit a ullam ut quia incidunt. Autem cumque nam blanditiis 
+            dolorum similique magni culpa, ratione eos
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elitp</p>
+        <buttom>Enter</buttom>
+        <a href="#head">Go to h1</a>
+        <a href="#nav" id="nav">Go to nav</a>
+        <a href="">Go to paragraph</a>
+        <input type="text" placeholder="search">
+    
+    </body>
+</html>
+    
